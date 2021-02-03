@@ -55,6 +55,6 @@ class DeploymentController extends Controller
 
     private function getServer() : ServerController
     {
-        return $this->variables['server'] = ServerController::instance( (int) $this->get('server_id') );
+        return ServerController::instance( (int) $this->get('server_id') );
     }
 }
